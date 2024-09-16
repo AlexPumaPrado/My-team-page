@@ -1,0 +1,213 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.Title {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  flex-direction: column;
+  text-align: left;
+  align-items: start;
+}
+
+.Title h1 {
+  font-size: 30px;
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.Text h2 {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.Text p {
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 375px;
+  /* Ancho de un móvil */
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 0;
+  box-sizing: border-box;
+  /* Incluye padding en el ancho total */
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 0;
+  /* Ajustado para evitar desbordamiento */
+  height: 325px;
+  box-sizing: border-box;
+  /* Incluye padding y border en el ancho total */
+}
+
+.second,
+.fourth,
+.sixth {
+  justify-content: flex-end;
+}
+
+.photo-name {
+  display: flex;
+  align-content: center;
+}
+
+.photo-name img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.rol {
+  padding-left: 0;
+  font-size: 12px;
+  writing-mode: vertical-lr;
+}
+
+/*autores*/
+.author {
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  font-size: 10px;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.author a {
+  width: 100%;
+  padding: 40px 0;
+  color: #4F4F4F;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* Media Query para pantallas de 1440px o más */
+@media (min-width: 1440px) {
+  .body {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 1440px;
+  }
+
+  .Title {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .Title h1 {
+    font-size: 50px;
+    text-align: start;
+    width: 50%;
+  }
+
+  .Text h2 {
+    font-size: 25px;
+    text-align: start;
+    padding: 0;
+    padding-top: 50px;
+  }
+
+  .Text p {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .container {
+    min-width: 1440px;
+    /* Ancho de un desktop */
+    display: flex;
+    /* Utiliza flexbox para el contenedor */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en múltiples líneas */
+    gap: 20px;
+    /* Espacio entre los elementos */
+    width: 100%;
+    /* Ocupa el ancho completo */
+    padding-left: 10%;
+    padding-right: 10%;
+    /* Espacio interno */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho total */
+    justify-content: space-between;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 0;
+    box-sizing: border-box;
+    /* Incluye padding en el ancho total */
+  }
+
+  .image {
+    height: 500px;
+  }
+
+  .second,
+  .fifth {
+    justify-content: flex-end;
+  }
+
+  .first,
+  .fourth,
+  .sixth {
+    justify-content: flex-start;
+  }
+
+  .photo-name img {
+    width: 250px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .rol {
+    font-size: 25px;
+  }
+
+
+
+
+
+}
